@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+      {{!-- <link rel="stylesheet" href="sign.css"> --}}
+      <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    place-items: center;
+}
+
+h1{
+    margin-top: 20vh;
+    margin-bottom: 30px;
+    color: crimson;
+
+}
+input{
+    font-size: 1rem;
+    width: 300px;
+    padding: 6px 2px; 
+    margin: 10px 0 10px 0;
+}
+.sub{
+    background-color:rgb(249, 186, 26);
+    cursor: pointer;
+}
+
+form{
+    text-align: center;
+    border: 5px solid rgb(16, 84, 58);
+    padding: 20px;
+    background-color: rgb(20, 255, 204);
+}
+      </style>
+</head>
+<body>
+   <h1>Sign up</h1>
+
+   <form action="/signup" method="post">
+   
+   <input type="text" name="name" placeholder="Name" autocomplete="off"><br><br>
+   <input type="password" name="password" placeholder = "Password" autocomplete="off"><br><br>
+   <input type="submit" class="sub">
+   
+   </form> 
+   <a href="/">Go to the login Page</a>
+
+
+
+</body>
+</html>

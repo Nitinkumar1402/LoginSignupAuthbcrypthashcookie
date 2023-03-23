@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    place-items: center;
+    background-color: rgb(216, 205, 222);
+}
+
+h1{
+    margin-top: 20vh;
+    margin-bottom: 30px;
+    color: rgb(25, 173, 124);
+
+}
+input{
+    font-size: 1rem;
+    width: 300px;
+    padding: 6px 2px; 
+    margin: 10px 0 10px 0;
+}
+.sub{
+    background-color:rgb(244, 114, 39);
+    cursor: pointer;
+}
+
+form{
+    text-align: center;
+    border: 5px solid rgb(161, 167, 0);
+    padding: 20px;
+    background-color: rgb(245, 26, 176);
+}
+
+
+        </style>
+        {{!-- <link rel="stylesheet" href="login.css"> --}}
+</head>
+<body>
+   <h1>Log in</h1>
+
+   <form action="/login" method="post">
+   
+   <input type="text" name="name" placeholder="Name" autocomplete="off"><br><br>
+   <input type="password" name="password" placeholder = "Password" autocomplete="off"><br><br>
+   <input type="submit" class="sub">
+   
+   </form> 
+
+
+<h3>Don't have Account </h3>
+   <a href="/signup">Make a new Account</a>
+
+
+
+</body>
+</html>
